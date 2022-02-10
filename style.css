@@ -2,11 +2,11 @@
 
 :root {
   --primaryColor: #fff;
-  --navColor1: #21292c;
-  --navColor2: #aa3e39;
-  --navColor3: #aa6e39;
-  --navColor4: #236267;
-  --navColor5: #2c8437;
+  --navColor1: #0D0D0D;
+  --navColor2: #034959;
+  --navColor3: #BF1131;
+  --navColor4: #03738C;
+  --navColor5: #0396A6;
 }
 
 html {
@@ -74,9 +74,36 @@ section {
 }
 
 section#home {
-  background-image: url("https://images.unsplash.com/photo-1581453904507-626ddb717f14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
-  background-size: cover;
-  background-position: center center;
+  position: relative; 
+  overflow: hidden;
+}
+
+#home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  opacity: .5;
+}
+
+#home-video:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(3, 150, 166, 0.3),rgba(3, 73, 89, 0.3));
+  z-index: 1;
+}
+
+#home-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 section#home a {
@@ -90,6 +117,8 @@ section#home a {
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
 }
+
+
 
 section#about {
   background-color: var(--navColor2);
