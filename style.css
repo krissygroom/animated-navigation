@@ -86,7 +86,6 @@ section#home {
   width: 100%;
   z-index: -1;
   overflow: hidden;
-  opacity: .5;
 }
 
 #home-video:before {
