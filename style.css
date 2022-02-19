@@ -147,7 +147,7 @@ nav li:nth-of-type(5) {
 }
 
 /* Slide out animation with delay for each nav item */
-.slide-in-1 {
+.slide-out-1 {
   animation: slide-out 0.4s linear 0.5s both;
 }
 
@@ -274,6 +274,13 @@ section#home a {
   padding-bottom: 5px;
   color: var(--primaryColor);
   border-bottom: 1px solid var(--primaryColor);
+}
+
+section#home .heading-primary {
+  font-size: 4.4rem;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  padding: 1rem 2rem;
 }
 
 section#about {
